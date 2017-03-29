@@ -1,0 +1,25 @@
+.mar10{margin:10px;}
+.mag20{margin:20px auto;}
+.man20{margin:0 20px;}
+.mal40{margin-left:40px;}
+.mag100{margin:100px auto;}
+.mag200{margin:200px auto;}
+
+.mar20{margin:20px;}
+.mar50{margin:50px;}
+.mat50{margin-top:50px;}
+.mauto{margin:0 auto;}
+
+video {
+    object-fit: contain;
+}
+
+.clearfix{zoom:1;}
+.lf{float:left;}
+
+
+
+.box1{box-sizing: border-box;float:left;text-align:center;margin: 10px 0px 0px 140px;}
+.icon1{margin-bottom:18px;}
+.boxSize1{display:block;width:250px;height:35px;line-height:35px;border:2px solid #FFF;margin:0 auto;border-radius:250px;}
+

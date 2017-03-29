@@ -1,0 +1,158 @@
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>rotate</title>
+	<style>
+		body,html,div,span,dl,dd,p,a,img,section,ul,li{list-style:none;margin:0;padding:0;list-style:none;}
+
+		img{
+			/*max-width:100%;*/
+		}
+
+
+		/*中间人物部分*/
+		.part .rotate{
+			width:550px;
+			height:550px;
+			position:relative;
+			margin-top:50px;
+			float:left;
+		}
+
+		.part .rotate .bbox{
+			width:300px;
+			height:300px;
+			position: absolute;
+		    left: 50px;
+		    top: 36px;
+		    text-align:center;
+		    /*animation: rotating1 30s;
+        	animation-iteration-count: infinite;
+        	animation-timing-function: linear;*/
+		}
+
+		.part .rotate .bbox img{
+			max-height:100%;
+		}
+
+		.part .rotate .rotate-out{
+			width:400px;
+			height:400px;
+			background:url('../images/prwq.png') no-repeat center center;
+			background-size:cover;
+			position:absolute;
+			top:0;
+			left:0;
+			animation: rotating2 30s;
+        	animation-iteration-count: infinite;
+        	animation-timing-function: linear;
+		}
+
+		.part .rotate .rotate-out .box{
+			width:90px;
+			height:90px;
+			position: absolute;
+			border-radius: 50%;
+			animation: rotating2-reverse 30s;
+	        animation-iteration-count: infinite;
+	        animation-timing-function: linear;
+		}
+
+		.part .rotate .rotate-out .box .info{
+			display:none \9;
+			opacity:0;
+			transition: opacity 1s;
+		}
+
+		.part .rotate .rotate-out .box:hover .info{
+			display:block \9;
+			opacity: 1;
+			transition: opacity 1s;
+		}
+
+		.part .rotate .rotate-out .box.o1{
+			top:35px;
+			left:0px;
+		}
+
+		.part .rotate .rotate-out .box.o2{
+			right:-40px;
+			top:155px;
+		}
+
+		.part .rotate .rotate-out .box.o3{
+			left:70px;
+			bottom:-17px;
+		}
+
+		/*动画速度*/
+		@keyframes rotating1{
+			0% {transform:rotate(0deg);}
+			100%{transform:rotate(360deg);}
+		}
+
+		@keyframes rotating2{
+			0% {transform:rotate(0deg);}
+			100%{transform:rotate(360deg);}
+		}
+
+		@keyframes rotating2-reverse{
+			0% {transform:rotate(0deg);}
+			100%{transform:rotate(-360deg);}
+		}
+
+
+	</style>
+</head>
+<body>
+	<div class="part">
+		<div class="rotate">
+			<div class="bbox">
+				<img id="bimg" src="../images/brotate3.png" alt="">
+			</div>
+			<div class="rotate-out">		
+				 <div class="box o1">
+                    <p><img src="../images/rotate0.png" alt=""></p>
+                    <!-- <div class="info">
+                        兄弟连高级讲师
+                    </div> -->
+                </div>
+                <div class="box o2">
+                    <p><img src="../images/rotate1.png" alt=""></p>
+                    <!-- <div class="info">
+                        兄弟连高级讲师
+                    </div> -->
+                </div>
+                <div class="box o3">
+                    <p><img src="../images/rotate2.png" alt=""></p>
+                    <!-- <div class="info">
+                        兄弟连高级讲师
+                    </div> -->
+			</div>
+		</div>
+	</div>
+	<script>
+		'use strick';
+		var box = document.getElementsByClassName('box');
+		var bimg = document.getElementById('bimg');
+
+		for(let i = 0;i < box.length;i++){
+			box[i].onclick = function(){
+				bimg.src = '../images/brotate' + i + '.png';
+			}
+		}
+		
+
+			// (function(x){
+			// 	for(let i = 0;i < box.length; i++){
+
+			// 	}
+			// 	console.log(i);
+
+			// })(x)
+		// }
+
+		
+	</script>
+</body>
+</html>

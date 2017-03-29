@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+    /*第三部分——9大技术革新*/
+    body,html,div,span,dl,dd,p,a,img,section,ul,li{list-style:none;margin:0;padding:0;list-style:none;}
+    
+    .part .rotate {
+        width: 550px;
+        height: 500px;
+        position: relative;
+        margin-top: 50px;
+        float: left;
+    }
+    
+    .part .rotate .php {
+        width: 444px;
+        height: 444px;
+        animation: rotating1 30s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+        
+    }
+    
+    .part .rotate .php .box {
+        top: 15px;
+        left: 50px;
+        width: 300px;
+        height: 300px;
+        position: absolute;
+        /*background: #87aad5;*/
+        /*border: 21px solid #e5e7ee;*/
+        /*border-radius: 50%;*/
+        animation: rotating-reverse1 30s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+    }
+    
+    .part .rotate .php p {
+        font-size: 36px;
+        line-height: 120px;
+        text-align: center;
+        color: #474852;
+        font-weight: 600;
+    }
+    
+    .part .rotate .rotate1 {
+        top: 0;
+        left: 0;
+        width: 444px;
+        height: 444px;
+        position: absolute;
+        background: url("./images/prwq.png") no-repeat center;
+        background-size:cover;
+        animation: rotating1 30s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+    }
+    
+    .part .rotate .rotate1 .box {
+        width: 70px;
+        height: 70px;
+        position: absolute;
+        border-radius: 50%;
+        animation: rotating-reverse1 30s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+    }
+    
+    .part .rotate .rotate1 .box p {
+        line-height: 70px;
+        text-align: center;
+        color: #474852;
+        font-weight: 600;
+    }
+    
+    .part .rotate .rotate1 .box.b1 {
+        /*top: -38px;*/
+        bottom:8px;
+        left: 100px;
+        background: #51bcb4;
+        background: rgba(81, 188, 180, 0.6);
+    }
+    
+    .part .rotate .rotate1 .box.b2 {
+        top: 20px;
+        left: 13px;
+        background: #ffad00;
+        background: rgba(255, 173, 0, 0.6);
+    }
+    
+    .part .rotate .rotate1 .box.b3 {
+        top: 180px;
+        right: -24px;
+        background: #db8cdb;
+        background: rgba(219, 140, 219, 0.6);
+    }
+    
+    .part .rotate .rotate1 .box.b4 {
+        top: 302px;
+        left: -13px;
+        background: #45b7fe;
+        background: rgba(69, 183, 254, 0.6);
+    }
+    
+    .part .rotate .rotate1 .box.b5 {
+        top: 388px;
+        left: 141px;
+        background: #ff494d;
+        background: rgba(255, 73, 77, 0.6);
+    }
+    
+    .part .rotate .rotate2 {
+        top: 82px;
+        left: 82px;
+        width: 277px;
+        height: 277px;
+        position: absolute;
+        background: url("./images/prwq.png") no-repeat center;
+        border-radius: 50%;
+        animation: rotating2 30s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+    }
+    
+    .part .rotate .rotate2 .box {
+        width: 70px;
+        height: 70px;
+        position: absolute;
+        border: 7px solid #e5e7ee;
+        border-radius: 50%;
+        animation: rotating-reverse2 30s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+    }
+    
+    .part .rotate .rotate2 .box p {
+        line-height: 70px;
+        text-align: center;
+        color: #474852;
+        font-weight: 600;
+    }
+    
+    .part .rotate .rotate2 .box.b1 {
+        top: -30px;
+        left: 27px;
+        background: #7a7ee1;
+        background: rgba(122, 126, 225, 0.6);
+    }
+    
+    .part .rotate .rotate2 .box.b2 {
+        top: 36px;
+        right: -42px;
+        background: #fe7748;
+        background: rgba(254, 119, 72, 0.6);
+    }
+    
+    .part .rotate .rotate2 .box.b3 {
+        top: 156px;
+        left: -33px;
+        background: #ff458c;
+        background: rgba(255, 69, 140, 0.6);
+    }
+    
+    .part .rotate .rotate2 .box.b4 {
+        top: 220px;
+        right: 12px;
+        background: #6fc675;
+        background: rgba(111, 198, 117, 0.6);
+    }
+    
+    .part .rotate .info {
+        top: 80px;
+        width: 200px;
+        display: none \9;
+        opacity: 0;
+        position: absolute;
+        transition: opacity 1s;
+    }
+    
+    .part .rotate .box:hover .info {
+        display: block \9;
+        opacity: 1;
+        transition: opacity 1s;
+    }
+
+    /*keyframes*/
+@keyframes rotating1{
+    0% {transform:rotate(0deg);}
+    100% {transform:rotate(360deg);}
+}
+@keyframes rotating-reverse1{
+    0% {transform:rotate(0deg);}
+    100% {transform:rotate(-360deg);}
+}
+@keyframes rotating2{
+    0% {transform:rotate(0deg);}
+    100% {transform:rotate(-360deg);}
+}
+@keyframes rotating-reverse2{
+    0% {transform:rotate(0deg);}
+    100% {transform:rotate(360deg);}
+}
+    </style>
+</head>
+<script src="http://cdn.bootcss.com/jquery/3.2.0/jquery.min.js"></script>
+<!-- <script src="./lxb.js"></script>
+<script src="./main.js"></script>
+<script src="./v.js"></script> -->
+<body>
+    <div class="part">
+        <div class="rotate">
+            <div class="php">
+                <div class="box">
+                    <img src="../images/lesson/bgcl.png" alt="">
+                </div>
+            </div>
+            <div class="rotate1">
+                <div class="box b1">
+                    <p><img src="../images/lesson/yq.png" alt=""></p>
+                    <div class="info">
+                        兄弟连高级讲师
+                    </div>
+                </div>
+                <div class="box b2">
+                    <p><img src="../images/lesson/yq.png" alt=""></p>
+                    <div class="info">
+                        兄弟连高级讲师
+                    </div>
+                </div>
+                <div class="box b3">
+                    <p><img src="../images/lesson/yq.png" alt=""></p>
+                    <div class="info">
+                        兄弟连高级讲师
+                    </div>
+                </div>
+            </div>
+           <!--  <div class="rotate2">
+                <div class="box b1">
+                    <p>PHP7.0</p>
+                    <div class="info">
+                        PHP7.0：性能大幅提升 2倍
+                    </div>
+                </div>
+                <div class="box b2">
+                    <p>HTML5</p>
+                    <div class="info">
+                        HTML5：跨平台开发更炫酷
+                    </div>
+                </div>
+                <div class="box b3">
+                    <p>jQuery</p>
+                    <div class="info">
+                        jQuery:轻量级 强大兼容
+                    </div>
+                </div>
+                <div class="box b4">
+                    <p>CSS3</p>
+                    <div class="info">
+                        CSS3：更丰富展现效果
+                    </div>
+                </div>
+            </div> -->
+        </div>
+    </div>
+
+</body>
+
+</html>
