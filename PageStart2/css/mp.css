@@ -10,6 +10,9 @@
 .mat50{margin-top:50px;}
 .mauto{margin:0 auto;}
 
+.w180{width:180px;}
+.h128{height:128px;width:100%;}
+
 video {
     object-fit: contain;
 }
@@ -23,3 +26,4 @@ video {
 .icon1{margin-bottom:18px;}
 .boxSize1{display:block;width:250px;height:35px;line-height:35px;border:2px solid #FFF;margin:0 auto;border-radius:250px;}
 
+/*#rudeshow{background:url('../images/lesson/redportline.png');}*/
