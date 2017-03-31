@@ -1,0 +1,27 @@
+.php_banner9 .location{position: relative;}
+.php_banner9 .location .subject{top:100px;right:0;width:320px;height:320px;position: absolute;}
+.php_banner9 .location .subject .sub{width:150px;height:150px;}
+.php_banner9 .location .subject .sub{background-size:cover;}
+.php_banner9 .location .subject .sub{position:relative;float:left;margin-right:10px;margin-bottom:10px;}
+.php_banner9 .location .subject .sjava{background:url('../images/location/fjava.png') no-repeat center;} 
+.php_banner9 .location .subject .sphp{background:url('../images/location/fphp.png') no-repeat center;} 
+.php_banner9 .location .subject .sh5{background:url('../images/location/fh5.png') no-repeat center;} 
+.php_banner9 .location .subject .sui{background:url('../images/location/fui.png') no-repeat center;} 
+
+
+.php_banner9 .location .schoolw a{display:block;float:left;width:80px;height:50px;}
+.php_banner9 .location .schoolw span{display:block;height:50px;width:50px;background-color:rgba(0,0,0,.6);text-align:center;border-radius:50%;padding:5px;padding-top:8px;}
+/*.php_banner9 .location .schoolw span.redline{height:1px;border-top:2px solid red;width:35px;}*/
+
+.php_banner9 .location .ftel{margin: 57px 0 30px 0px;}
+.php_banner9 .location .ftel .telcon{display:block;width:50px;height:60px;background:url('../images/location/ftel.png') no-repeat center;margin-right:10px;}
+.php_banner9 .location .schoolw .rt span{background-color:red;margin-top:-10px;}
+.php_banner9 .location .schoolw a:hover span{background-color:red;margin-top:-10px;transition: .5s}
+.php_banner7{position:relative;}
+
+.php_banner7 .lribben{position: absolute;bottom:-95px;left:0px;}
+.php_banner7 .lribben img{width:300px;}
+
+
+.php_banner2 .rribben{position: absolute;bottom:-95px;right:0;}
+.php_banner2 .rribben img{width:300px;}

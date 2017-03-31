@@ -149,15 +149,15 @@ body,html,input{
 
 .banner1_try{position: absolute;bottom:40px;width:1200px;}
 .banner1_try a:hover span{background-color:#be1d23;border:2px solid #be1d23;}
-.banner1_try .aicon{background:url('../images/nav/try_video01.png');width:43px;height:42px;}
+.banner1_try .aicon{background:url('../images/nav/try_video01.png');width:43px;height:42px;transition: 0.5s}
 .banner1_try .audition:hover .aicon{background:url('../images/nav/try_video.png');}
-.banner1_try .picon{background:url('../images/nav/try_cut02.png');width:43px;height:42px;}
+.banner1_try .picon{background:url('../images/nav/try_cut02.png');width:43px;height:42px;transition: 0.5s}
 .banner1_try .praise:hover .picon{background:url('../images/nav/try_cut.png');}
-.banner1_try .gicon{background:url('../images/nav/try_docum03.png');width:45px;height:42px;}
+.banner1_try .gicon{background:url('../images/nav/try_docum03.png');width:45px;height:42px;transition: 0.5s}
 .banner1_try .getjob:hover .gicon{background:url('../images/nav/try_docum.png');}
 
 
-.php_banner2{overflow:hidden;background:url('../images/analyze/banner2.png') no-repeat center;background-size:100% 100%;}
+.php_banner2{position:relative;background:url('../images/analyze/banner2.png') no-repeat center;background-size:100% 100%;z-index:999;}
 .php_knowledge{width:640px;margin:0 auto;text-align:center;margin:200px auto 100px;}
 .php_knowledge .knowledge-title{font:45px bold Verdana,Tahoma,'Microsoft Yahei','Simsun';text-shadow: 0px 0px 2px #000;color:#FFF;}
 .php_knowledge .knowledge-subhead{font:14px lighter Verdana,Tahoma,'Microsoft Yahei','Simsun';text-shadow: 0px 0px 2px #000;color:#FFF;}
@@ -165,12 +165,13 @@ body,html,input{
 .php_knowledge a{color:#FFF;display:block;overflow:hidden;margin:0 auto;}
 .php_knowledge span{width:33%;box-sizing: border-box;display:block;float:left;}
 .php_knowledge a span.know-scale{border:1px dashed #FFF;display:block;height:30px;line-height:30px;border-radius: 10px;width:80%;margin-left:10%;}
-.php_knowledge a:hover span.know-scale{background-color:#1f212e;}
+.php_knowledge a:hover span.know-scale{background-color:#1f212e;transition: 0.5s}
 
 
 .php_banner2 .computer{position:relative;background:url('../images/analyze/computer.png')  no-repeat center;background-size:contain;height:500px;width:800px;}
 .php_banner2 video{top:12px;left: 158px;position:absolute;width: 492px;height: 339px}
-
+.php_banner2 .rribben{position: absolute;bottom:-95px;right:0;}
+.php_banner2 .rribben img{width:300px;}
 .php-reason{width: 1200px;margin: 0 auto;text-align: center;overflow:hidden;}
 .php-reason .reason-subhead{margin: 20px 0px 100px 0px;}
 .php-reason h2.reason-title{font: bold 36px Verdana,Tahoma,'Microsoft Yahei','Simsun';color:#FFF;}
@@ -188,7 +189,7 @@ body,html,input{
 
 /*banner3 start*/
 .php_banner3{position:relative;/*background:url('../images/lesson/redportline.png') no-repeat;background-size:contain;background-position: 60% -190px;*/}
-.php_banner3{background:url('../images/lesson/banner3.png') no-repeat;background-size:contain;}
+.php_banner3{background:url('../images/lesson/banner3.png') no-repeat;background-size:100%;}
 .php_banner3 .contain{width:1200px;margin:0 auto;}
 .php_banner3 .square{position: absolute;width:960px;top:450px;left:15%;}
 .php_banner3 .rude{position: absolute;left:20%;z-index:0;}
@@ -242,16 +243,24 @@ body,html,input{
 .php_banner3 .lesson .stage .rg a{color:#FFF;}
 .php_banner3 .lesson .stage .les{width:138px;height:30px;border:1px solid #dadada;border-radius:5px;line-height:30px;text-align:center;letter-spacing: 5px;padding:0 25px;}
 .php_banner3 .lesson .stage .cyline{border-top:1px dashed #dadada;height:1px;width:138px;margin-top:15px;}
-.php_banner3 .lesson .lessonInfo{height:1200px;margin:110px auto;}
+.php_banner3 .lesson .lessonInfo{margin:110px auto;}
 .php_banner3 .lesson .lessonInfo .easyInfo{height:100%;}
-.php_banner3 .lesson .lessonInfo .easyList{width:295px;height:500px;box-shadow:0px 0px 5px 2px #dadada;float:left;padding:30px 30px 20px;position:relative;margin-bottom: 50px}
+.php_banner3 .lesson .lessonInfo .easyList{width:295px;height:500px;box-shadow:0px 0px 5px 2px #dadada;float:left;padding:30px 30px 20px;position:relative;margin-bottom: 50px;background-color:#FFF;}
+.php_banner3 .lesson .lessonInfo .easyList:hover{box-shadow:0px 0px 5px 8px #dadada;transition: .5s}
 .php_banner3 .lesson .lessonInfo .easyList .enum{display:block;width:55px;height:55px;background:url('../images/lesson/enum.png') no-repeat center;background-size:contain;position:absolute;top:-22px;left:-28px;line-height:55px;text-align:center;color:#FFF;}
 .php_banner3 .lesson .lessonInfo .enav .enav1{font-weight:bold;}
 .php_banner3 .lesson .lessonInfo .syline{border-top:1px dashed #000;height:1px;width:204px;margin: 5px 0 15px;}
 .php_banner3 .lesson .lessonInfo h3{height:48px;font:bold 16px/1.5 Verdana,Tahoma,'Microsoft Yahei','Simsun';}
-.php_banner3 .lesson .lessonInfo .course{margin-top:27px;}
+.php_banner3 .lesson .lessonInfo .course{margin-top:27px;height:208px;}
+.php_banner3 .lesson .lessonInfo .course .courseL{display:block;float:left;width:100px;}
+.php_banner3 .lesson .lessonInfo .course .courseB{display:block;float:left;width:140px;}
+.php_banner3 .lesson .lessonInfo .course .courseR{display:block;float:right;width:140px;}
+.php_banner3 .lesson .lessonInfo .course .courseL2{display:block;float:left;width:200px;}
+.php_banner3 .lesson .lessonInfo .course .courseB2{display:block;float:left;width:200px;}
+.php_banner3 .lesson .lessonInfo .course .courseR2{display:block;float:right;width:200px;}
 .php_banner3 .lesson .lessonInfo .easyList .case{position:absolute;left:55px;top:400px;}
 .php_banner3 .lesson .lessonInfo .easyList .case span{color: rgba(255,0,0,.2);font-size: 36px;width: 24px;height: 45px;position: absolute;top: -22px;left: -10px;}
+.php_banner3 .lesson .lessonInfo .easyList .case p{width:250px;}
 .php_banner3 .lesson .lessonInfo .easyEnd{width:690px;}
 .php_banner3 .stuway .freestudy{margin-left:100px;}
 .php_banner3 .stuway .tool .ipad{right:300px;}
@@ -267,7 +276,7 @@ body,html,input{
 .php_banner4{background:url('../images/famous/banner4.png') no-repeat;}
 /*.php_banner4 .teadetail .hd,.php_banner4 .teadetail .part,.php_banner4  .chades{float:left;}*/
 .php_banner4 .contain{width:1200px;margin:0 auto;}
-.php_banner4 .teadetail{height:560px;position: relative;}
+.php_banner4 .teadetail{height:520px;position: relative;}
 .php_banner4 .team{margin:37px 0;}
 .php_banner4 .team h2{color:#FFF;font: 36px/1.5 Verdana,Tahoma,'Microsoft Yahei','Simsun';}
 .php_banner4 .team p{color:#FFF;}
@@ -276,7 +285,7 @@ body,html,input{
 .php_banner4 .teadetail .hd{bottom:200px;left:0;}
 .php_banner4 .teadetail .chades{bottom:200px;right:0;}
 .php_banner4 .teadetail .hd p{color:#FFF;}
-.php_banner4{background-size:100%;}
+.php_banner4{background-size:100% 100%;}
 
 
 
@@ -365,6 +374,7 @@ body,html,input{
 .php_banner4 .chades .chadesn .number{width:70px;height:75px;font:normal 60px/1.5 Verdana,Tahoma,'Microsoft Yahei','Simsun';color:#a9151b;}
 .php_banner4 .chades .chadesn .enumber{width:70px;text-align:right;font:normal 10px/1.5 Verdana,Tahoma,'Microsoft Yahei','Simsun';color:#a9151b;}
 .php_banner4 .chades .chades_rec p{text-align:right;color:#FFF;}
+.php_banner4 .chades .chades_rec h3{font: 18px/1.5 Verdana,Tahoma,'Microsoft Yahei','Simsun';text-align:right;color:#FFF;}
 .php_banner4 .chades .chadesn:after{content:"."; display:block; height:0; visibility:hidden; clear:both;}
 
 .php_banner4 .compare{height:417px;}
@@ -386,6 +396,8 @@ body,html,input{
 
 .php_banner4 .hp .apply a{display:block;color:#000;font: 16px/1.5 Verdana,Tahoma,'Microsoft Yahei','Simsun';margin-bottom:68px;}
 .php_banner4 .hp .apply a span{margin:0 auto;width:148px;height:40px;line-height:40px;border-radius:25px;border:2px solid #000;display:block;}
+.php_banner4 .hp .apply:hover a{color:#FFF;}
+.php_banner4 .hp .apply:hover a span{transition: 0.5s;background-color:rgba(255,0,0,.8);border-color:#FFF;}
 /*.php_banner4 .hp .apply a:hover span{background-color:rgba(255,0,0,.6);}*/
 
 /*banner4 end*/
@@ -410,7 +422,7 @@ body,html,input{
 .php_banner6 .cd{text-align:center;background-color:#EBEBEB;}
 .php_banner6 .cd h2{margin: 90px auto 18px;font:normal 18px/1.5 Verdana,Tahoma,'Microsoft Yahei','Simsun';}
 .php_banner6 .cd a{display:block;}
-.php_banner6 .cd a:hover span{background-color:#be1d23;}
+.php_banner6 .cd a:hover span{background-color:#be1d23;transition: .5s}
 .php_banner6 .cd span{display:block;font:normal 16px/1.5 Verdana,Tahoma,'Microsoft Yahei','Simsun';width:215px;border-radius:25px;height:40px;line-height:40px;color:#FFF;background-color:#3e3a39;margin:35px auto 66px;}
 .php_banner6 .view .pic{height:385px;position:relative;}
 .php_banner6 .view1 .environpic{background:url('../images/environ/view1.png') no-repeat center;background-size:cover;}
@@ -447,6 +459,9 @@ body,html,input{
 .php_banner7 .serial_detail{margin-left:18px;text-align:left;}
 .php_banner7 .serial_detail h3.dtital{font:bold 18px/1.5 Verdana,Tahoma,'Microsoft Yahei','Simsun';color:#971b2b;margin-bottom:19px;}
 .php_banner7 .serial_detail p{margin-bottom:12px;}
+.php_banner7 .lribben{position: absolute;bottom:-95px;left:0px;}
+.php_banner7 .lribben img{width:300px;}
+
 
 .php_banner8 .free{position: relative;}
 .php_banner8 .free .free1{width:1000px;height:450px;background:url('../images/free/free1.png') no-repeat center;background-size:cover;position:absolute;right:0;top:0;z-index:998;}
@@ -461,7 +476,7 @@ body,html,input{
 .php_banner8 .free .free1 .freed p{color:#FFF;}
 .php_banner8 .free .free1 .freed a{display:block;color:#FFF;margin-top:30px;}
 .php_banner8 .free .free1 .freed a span{display:block;width:170px;height:30px;border-radius: 25px;border:1px dashed #FFF;text-align:center;line-height:30px;}
-.php_banner8 .free .free1 .freed a:hover span{background-color:rgba(255,0,0,.6);}
+.php_banner8 .free .free1 .freed a:hover span{background-color:rgba(255,0,0,.6);transition: 0.5s}
 
 .php_banner8 .free .freecb{position: absolute;bottom:-220px;left:-315px;z-index:999;}
 .php_banner8 .free .freecb .freec{background:url('../images/free/computer2.png') no-repeat center;height:445px;width:419px;background-size:cover;}
@@ -473,14 +488,34 @@ body,html,input{
 .php_banner9{background-size:100%;background:url('../images/location/footer.png') no-repeat center;background-size:cover;}
 .php_banner9 .location{width:1200px;margin:0 auto;padding-top:60px;}
 .php_banner9 .location .schoolw a{color:#FFF;}
-.php_banner9 .location .schoolw a span{display:inline-block;margin-right:40px;margin-top:5px;padding-bottom:6px;}
-.php_banner9 .location h2{margin:57px 0 30px 48px;font: bold 36px/1.5 Verdana,Tahoma,'Microsoft Yahei','Simsun';color:#FFF;}
-.php_banner9 .location p{color:#FFF;margin-bottom:5px;}
+/*.php_banner9 .location .schoolw a span{display:inline-block;margin-right:40px;margin-top:5px;padding-bottom:6px;}*/
+.php_banner9 .location h2{font: bold 36px/1.5 Verdana,Tahoma,'Microsoft Yahei','Simsun';color:#FFF;}
+.php_banner9 .location p{font-size:20px;color:#FFF;margin-bottom:5px;}
 .php_banner9 .container p.copy{margin-top:130px;text-align:center;color:#6B6B6B;font: 12px/1.5 Verdana,Tahoma,'Microsoft Yahei','Simsun';}
 .php_banner9 .container p.hcopy{height:30px;}
-.php_banner9 .container .redline{border-top:2px solid #F00;height:2px;width:40px;}
+.php_banner9 .location{position: relative;}
+.php_banner9 .location .subject{top:100px;right:0;width:320px;height:320px;position: absolute;}
+.php_banner9 .location .subject .sub{width:150px;height:150px;}
+.php_banner9 .location .subject .sub{background-size:cover;}
+.php_banner9 .location .subject .sub{position:relative;float:left;margin-right:10px;margin-bottom:10px;}
+.php_banner9 .location .subject .sjava{background:url('../images/location/fjava.png') no-repeat center;} 
+.php_banner9 .location .subject .sphp{background:url('../images/location/fphp.png') no-repeat center;} 
+.php_banner9 .location .subject .sh5{background:url('../images/location/fh5.png') no-repeat center;} 
+.php_banner9 .location .subject .sui{background:url('../images/location/fui.png') no-repeat center;} 
+.php_banner9 .location .schoolw a{display:block;float:left;width:80px;height:50px;}
+.php_banner9 .location .schoolw span{display:block;height:50px;width:50px;background-color:rgba(0,0,0,.6);text-align:center;border-radius:50%;padding:5px;padding-top:8px;}
+/*.php_banner9 .location .schoolw span.redline{height:1px;border-top:2px solid red;width:35px;}*/
+.php_banner9 .location .ftel{margin: 57px 0 30px 0px;}
+.php_banner9 .location .ftel .telcon{display:block;width:50px;height:60px;background:url('../images/location/ftel.png') no-repeat center;margin-right:10px;}
+.php_banner9 .location .schoolw .rt span{background-color:red;margin-top:-10px;}
+.php_banner9 .location .schoolw a:hover span{background-color:red;margin-top:-10px;transition: .5s}
+.php_banner7{position:relative;}
 
-.banner9_float{background-color:#232323;box-shadow: 0px -2px 5px 0px;}
+
+
+/*.php_banner9 .container .redline{border-top:2px solid #F00;height:2px;width:40px;}*/
+
+.banner9_float{background-color:#232323;box-shadow: 0px -2px 5px 0px;width:100%;height:72px;position: fixed;bottom:0px;z-index:999;}
 .banner9_float .contain{width:1200px;margin:0 auto;text-align:center;padding:15px 0;}
 .banner9_float input{width:185px;height:37px;font: 18px/1.5 Verdana,Tahoma,'Microsoft Yahei','Simsun';border-radius:5px;margin-right:50px;}
 .banner9_float input::-ms-input-placeholder{text-align: center;} 
